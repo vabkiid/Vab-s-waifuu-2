@@ -3,7 +3,7 @@ from discord.ext import commands
 import datetime
 import os
 import time
-from keep_alive import keep_alive
+
 
 start_time = time.time()
 
@@ -102,5 +102,4 @@ async def invite(ctx):
     
     await ctx.send(embed=embed)
 
-keep_alive()  # ✅ keeps the bot running 24/7
 bot.run(os.getenv("TOKEN"))
